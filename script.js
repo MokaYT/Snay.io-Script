@@ -97,61 +97,6 @@ if (isMobile()) {
     text-align: center;
     width: 33vmin;
     height: 24vmin
-}
-
-#chatBtn {
-    opacity: 1;
-    background: url('https://imgur.com/icIjLBH.png');
-    width: 3vmax;
-    height: 3vmax;
-    background-size: 100% 100%;
-    border-style: none
-}
-
-#emojiBtn {
-    opacity: 1;
-    color: #fff;
-    background: url('https://imgur.com/AAhVZ4G.png');
-    width: 3vmax;
-    height: 3vmax;
-    background-size: 100% 100%;
-    border-style: none
-}
-
-#fullScreenBtn {
-    position: absolute;
-    width: 6vw;
-    height: 6vw;
-    top: 12vh;
-    left: 12vh;
-    opacity: 1;
-    z-index: 99;
-    background: url('https://imgur.com/67nn2XV.png');
-    background-size: 100% 100%;
-    border-style: none
-}
-
-.windowclosebtn {
-    float: right;
-    width: 7vmin;
-    height: 7vmin;
-    border-style: none;
-    background: url('https://imgur.com/IrrCXht.png');
-    background-repeat: no-repeat;
-    background-size: 7vmin 7vmin;
-    position: relative
-}
-
-#leaveBtn {
-    opacity: 1;
-    left: 1vmin;
-    background: url('https://imgur.com/EP756EK.png');
-}
-
-#lead-btn {
-    background: url('https://imgur.com/x4iUXEm.png');
-    right: 5vmin
-}
     `;
 
     if (style.styleSheet) {
@@ -179,41 +124,11 @@ modmenu.appendChild(document.createElement("br"));
 
 		const logo = document.createElement("img");
 		const node = document.createElement("p");
-		const textnode = document.createTextNode("Moka's Snay.io Script");
 		const menuTitle = document.querySelector("#title");
 		menuTitle.src = "https://imgur.com/hwTdZHP.png";
 		menuTitle.style.position = "absolute";
 		menuTitle.style.top = "-5%";
 		menuTitle.style.zIndex = "7";
-		node.appendChild(textnode);
-		node.style.backgroundImage = "linear-gradient(to right, #00000, gray, #00000)";
-		node.style.position = "absolute";
-		node.style.left = "25%";
-		node.style.top = "5%";
-		node.style.color = "white";
-		node.style.padding = "8px";
-		node.style.borderRadius = "25px";
-		node.style.opacity = "70%";
-		node.style.border = "2px solid black";
-		node.style.color = "white";
-		logo.style.backgroundColor = "#6495ED";
-		logo.style.position = "absolute";
-		logo.style.left = "20%";
-		logo.style.top = "5%";
-		logo.style.borderRadius = "50%";
-		logo.style.opacity = "70%";
-		logo.src = "https://yt3.googleusercontent.com/u-utCWZrPSNmWBChuaUop9XAtmKNcAh2y_b03FREgZlYYu1huVegP0_UqE3aV1Jt3k1hqnjY=s176-c-k-c0x00ffffff-no-rj";
-		logo.style.height = "10%";
-		logo.style.width = "6%";
-		logo.style.border = "3px solid black";
-		document.querySelector("#deco1").style.opacity = "0%";
-		document.querySelector("#deco2").style.opacity = "0%";
-		document.querySelector("#deco3").style.opacity = "0%";
-		document.querySelector("#deco4").style.opacity = "0%";
-		document.querySelector("#signin-btn").src = "http://www.clker.com/cliparts/d/u/w/y/F/1/thin-gray-signin-button-hi.png";
-		document.querySelector("#HUD").appendChild(logo);
-		document.querySelector("#HUD").appendChild(node);
-		node.classList.add("NewHud");
 		/*
 		setInterval(()=>{
 			var labels = document.querySelector("#gallery-body").querySelectorAll("label");
@@ -309,7 +224,7 @@ modmenu.appendChild(document.createElement("br"));
 
 
 		var removeSkinBtn = document.createElement("button");
-		var removeSkinText = document.createTextNode("Remove Last Saved Custom Skin");
+		var removeSkinText = document.createTextNode("Remove Skin");
 		removeSkinBtn.append(removeSkinText);
 		removeSkinBtn.style = "height: 50px; width:fit-content; background: red; border-radius: 25px; color: white;";
 
@@ -547,13 +462,13 @@ modmenu.appendChild(document.createElement("br"));
 */
 			document.querySelector("#title").style.zIndex = "2";
 			document.querySelector("button#play-btn").style.backgroundImage = "url('https://imgur.com/7YMajXs.png')";
+			document.querySelector("button#play-btn").style.backgroundColor = "black";
 			document.querySelector("button#spectate-btn").style.backgroundImage = "url('https://imgur.com/IzLinbS.png')";
-			document.querySelector("button#spectate-btn").style.border = "3px solid white";
-			document.querySelector("button#spectate-btn").style.backgroundColor = "gray";
+			document.querySelector("button#spectate-btn").style.backgroundColor = "black";
 			document.querySelector("button#settings-btn").style.backgroundImage = "url('https://imgur.com/Vs3qLFY.png')";
-		  document.querySelector("button#settings-btn").style.backgroundImage = "url('https://imgur.com/Vs3qLFY.png')";
-			document.querySelector("#settings-btn").style.backgroundColor = "gray";
-		  document.querySelector("#modmenu").style.height = "fit-content";
+		  	document.querySelector("button#settings-btn").style.backgroundImage = "url('https://imgur.com/Vs3qLFY.png')";
+			document.querySelector("#settings-btn").style.backgroundColor = "black";
+		  	document.querySelector("#modmenu").style.height = "fit-content";
 			document.querySelector("label[for='custom-skin']").nextElementSibling.querySelector("li").style.height = "";
 
 
