@@ -1,15 +1,8 @@
 window.loggedIn = false;
-	function isMobile() {
-  return (window.screen.width < 800) && ("ontouchstart" in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0);
-}
-	window.onMobile = isMobile();
-       
+const isMobile = () => (window.innerWidth < 800) && ("ontouchstart" in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0);
+window.onMobile = isMobile();
 
-if (isMobile()) {
-  console.log("I am on mobile");
-} else {
-  console.log("I am on PC");
-}
+console.log(I am on ${isMobile() )? 'mobile' : 'PC'});
 
 
 
