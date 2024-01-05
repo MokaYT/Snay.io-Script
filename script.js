@@ -2,7 +2,7 @@ window.loggedIn = false;
 const isMobile = () => (window.innerWidth < 800) && ("ontouchstart" in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0);
 window.onMobile = isMobile();
 
-console.log("I am on" {isMobile() == true ? "Mobile" : "PC"});
+console.log("I am on" isMobile() == true ? "Mobile" : "PC");
 
 	function setupUI(){
 		var style = document.createElement('style');
